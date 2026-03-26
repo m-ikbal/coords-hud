@@ -12,7 +12,7 @@ import dev.yourname.coordshud.CoordsHUD;
 import dev.yourname.coordshud.client.CoordsHudState;
 
 /**
- * Renders player block coordinates in the top-left corner while in-game.
+ * Renders player block coordinates in the top-left when {@link CoordsHudState} visibility is on.
  */
 public final class CoordsHudOverlay {
 

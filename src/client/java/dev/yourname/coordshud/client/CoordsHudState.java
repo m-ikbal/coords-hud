@@ -3,11 +3,11 @@ package dev.yourname.coordshud.client;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * Client-only visibility flag for the coordinates HUD (default: shown).
+ * Client-only visibility flag for the coordinates HUD (default: hidden until toggled).
  */
 public final class CoordsHudState {
 
-	private static final AtomicBoolean visible = new AtomicBoolean(true);
+	private static final AtomicBoolean visible = new AtomicBoolean(false);
 
 	private CoordsHudState() {
 	}

@@ -5,7 +5,7 @@ Lightweight **Fabric** client mod for **Minecraft 1.21.11** that shows your **bl
 ## Features
 
 - Live block coordinates (`X / Y / Z`) while in a world
-- **Toggle key:** assign **Toggle Coordinates HUD** under **Options → Controls → Key Binds** (category **Coords HUD**); default is unbound until you set a key
+- **Toggle key:** assign **Toggle Coordinates HUD** under **Options → Controls → Key Binds** (category **Coords HUD**); the HUD **starts hidden** until you press the bound key (default: unbound)
 - Drawn on a dedicated HUD layer (before chat) via Fabric’s `HudElementRegistry`
 
 ## Requirements
