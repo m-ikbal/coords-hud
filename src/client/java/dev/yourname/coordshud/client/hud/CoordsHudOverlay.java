@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 
 import dev.yourname.coordshud.CoordsHUD;
+import dev.yourname.coordshud.client.CoordsHudState;
 
 /**
  * Renders player block coordinates in the top-left corner while in-game.
@@ -30,6 +31,10 @@ public final class CoordsHudOverlay {
 	}
 
 	private static void render(DrawContext context, RenderTickCounter tickCounter) {
+		if (!CoordsHudState.isVisible()) {
+			return;
+		}
+
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (client.player == null || client.world == null) {
 			return;
